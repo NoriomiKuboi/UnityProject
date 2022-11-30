@@ -13,10 +13,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += transform.forward * 0.03f;
+        transform.position += transform.forward * 0.01f;
 
         // è„è∏
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))    
         {
             transform.Rotate(-1, 0, 0);
         }
