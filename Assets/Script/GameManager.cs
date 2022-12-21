@@ -17,4 +17,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(nextScene);
     }
+
+    // ƒQ[ƒ€I—¹
+    public void ButtonExit()
+    {
+        Application.Quit();
+    }
 }

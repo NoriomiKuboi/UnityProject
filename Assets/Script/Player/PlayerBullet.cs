@@ -6,15 +6,22 @@ public class PlayerBullet : MonoBehaviour
 {
     public float deleteTime = 3.0f;
 
-    // Use this for initialization
     void Start()
     {
         Destroy(gameObject, deleteTime);
     }
 
-    // Update is called once per frame
     void Update()
     {
 
+    }
+
+    // “G‚Æ‚Ì“–‚½‚è”»’è
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            other.GetComponent<Enemy>().Damage();
+        }
     }
 }
