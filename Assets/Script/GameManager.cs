@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    // escで終了
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+    }
+
     // シーンリセット
     public void SceneReset()
     {
@@ -12,10 +21,10 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(activeSceneName);
     }
 
-    // シーン遷移
-    public void ChangeScene(string nextScene)
+    // シーン遷移(次のシーンへ)
+    public void NextScene(string nextSceneName)
     {
-        SceneManager.LoadScene(nextScene);
+        SceneManager.LoadScene(nextSceneName);
     }
 
     // ゲーム終了

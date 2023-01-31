@@ -11,7 +11,7 @@ public class EnemyTrackingShot : MonoBehaviour
     float nowTime = 0;
 
     private float countDown = 3.0f; // 操作できるようになるまでの時間
-    private int count;
+    private int count; // カウントダウンカウント
 
     void Start()
     {

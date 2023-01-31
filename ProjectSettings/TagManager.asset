@@ -7,11 +7,12 @@ TagManager:
   - Enemy
   - eBullet
   - pBullet
+  - Fade
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - MiniMap
   - Water
   - UI
   - 

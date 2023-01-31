@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyBullet : MonoBehaviour
 {
     public float speed = 1.0f; // 弾のスピード
-    public float time = 2.0f; // 消滅までの時間
+    public float deleteTime = 1.0f; // 消滅までの時間
     protected Vector3 forward = new Vector3(1, 1, 1);
     protected Quaternion forwardAxis = Quaternion.identity;
     protected Rigidbody rb;
@@ -27,9 +27,9 @@ public class EnemyBullet : MonoBehaviour
     {
         rb.velocity = forwardAxis * forward * speed;
         rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, rb.velocity.z);
-        time -= Time.deltaTime;
+        deleteTime -= Time.deltaTime;
 
-        if(time <= 0)
+        if(deleteTime <= 0)
         {
             Destroy(this.gameObject);
         }
