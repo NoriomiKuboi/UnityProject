@@ -8,15 +8,17 @@ TagManager:
   - eBullet
   - pBullet
   - Fade
+  - Field
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - MiniMap
+  - 
   - Water
   - UI
-  - 
-  - 
+  - Minimap
+  - Enviroment
   - 
   - 
   - 

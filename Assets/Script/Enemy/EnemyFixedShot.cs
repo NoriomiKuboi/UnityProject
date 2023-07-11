@@ -13,7 +13,7 @@ public class EnemyFixedShot : MonoBehaviour
     public float delayTime = 1; // 最初に打ち出す時間
     float nowTime = 0;
 
-    private float countDown = 3.0f; // 操作できるようになるまでの時間
+    private float countDown = 5.0f; // 操作できるようになるまでの時間
     private int count; // カウントダウンカウント
 
     void Start()

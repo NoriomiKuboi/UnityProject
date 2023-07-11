@@ -6,12 +6,11 @@ public class EnemyBullet : MonoBehaviour
 {
     public float speed = 1.0f; // 弾のスピード
     public float deleteTime = 1.0f; // 消滅までの時間
-    protected Vector3 forward = new Vector3(1, 1, 1);
-    protected Quaternion forwardAxis = Quaternion.identity;
-    protected Rigidbody rb;
-    protected GameObject enemy;
+    private Vector3 forward = new Vector3(1, 1, 1);
+    private Quaternion forwardAxis = Quaternion.identity;
+    private Rigidbody rb;
+    private GameObject enemy;
 
-    // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody>();
@@ -22,7 +21,6 @@ public class EnemyBullet : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         rb.velocity = forwardAxis * forward * speed;

@@ -5,7 +5,6 @@ using UnityEngine;
 public class CreateRandomPosition : MonoBehaviour
 {
     [SerializeField]
-    [Tooltip("生成するObj")]
     private GameObject createPrefab;
 
     public int enemyNum;
@@ -24,11 +23,11 @@ public class CreateRandomPosition : MonoBehaviour
         {
             yield return new WaitForSeconds(create);
 
-            // rangeAとrangeBのx座標の範囲内でランダムな数値を作成
+            // rangeAとrangeBのx座標の範囲内でランダムな数値を取得
             float x = Random.Range(rangeA, rangeB);
-            // rangeAとrangeBのy座標の範囲内でランダムな数値を作成
+            // rangeAとrangeBのy座標の範囲内でランダムな数値を取得
             float y = Random.Range(rangeA, rangeB);
-            // rangeAとrangeBのz座標の範囲内でランダムな数値を作成
+            // rangeAとrangeBのz座標の範囲内でランダムな数値を取得
             float z = Random.Range(rangeA, rangeB);
 
             // GameObjectを上記で決まったランダムな場所に生成

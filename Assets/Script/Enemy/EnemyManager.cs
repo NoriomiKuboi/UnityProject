@@ -11,8 +11,6 @@ public class EnemyManager : MonoBehaviour
     {
         enemyBox = GameObject.FindGameObjectsWithTag("Enemy");
 
-        //print("“G‚Ì”F" + enemyBox.Length);
-
         if (enemyBox.Length == 0)
         {
             SceneManager.LoadScene("ResultScene");

@@ -5,6 +5,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    // 60fpsŒÅ’è
+    private void Start()
+    {
+        Application.targetFrameRate = 60;
+    }
+
     // esc‚ÅI—¹
     void Update()
     {

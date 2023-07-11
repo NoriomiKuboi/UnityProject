@@ -10,7 +10,7 @@ public class EnemyTrackingShot : MonoBehaviour
     public float delayTime = 1; // 最初に打ち出す時間
     float nowTime = 0;
 
-    private float countDown = 3.0f; // 操作できるようになるまでの時間
+    private float countDown = 5.0f; // 操作できるようになるまでの時間
     private int count; // カウントダウンカウント
 
     void Start()
@@ -51,7 +51,7 @@ public class EnemyTrackingShot : MonoBehaviour
         //direction.y = 0;
         //direction.z = 0;
 
-        var lookRotation = Quaternion.LookRotation(direction, Vector3.up);
+        var lookRotation = Quaternion.LookRotation(-direction, Vector3.up);
     
         GameObject bulletClone = Instantiate(bullet, transform.position, Quaternion.identity);
     
